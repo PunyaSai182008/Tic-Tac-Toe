@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-
 nav {
-    background-color: #007bff;
+    background-color: #07bfff;
     color: white;
     height: 65px;
     font-size: 27px;
@@ -19,16 +17,13 @@ nav {
 }
 
 nav:hover {
-    background-color: rgb(243, 236, 236);
-    color: #007bff;
+    background-color: white;
+    color: #07bfff;
 }
-
 
 nav ul {
     list-style-type: none;
 }
-
-
 
 .gameContainer {
     display: flex;
@@ -54,7 +49,7 @@ nav ul {
 }
 
 .box:hover {
-    background-color: #9ac8fa;
+    background-color: #8ce1fd;
 }
 
 .info {
@@ -64,6 +59,7 @@ nav ul {
 .gameInfo {
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
+
 }
 
 .gameInfo h1 {
@@ -94,9 +90,8 @@ nav ul {
 #reset {
     margin: 0 23px;
     padding: 1px 18px;
-    background: #9ac8fa;
+    background-color: #07bfff;
     color: white;
-    border: none;
     border-radius: 6px;
     cursor: pointer;
     font-family: 'Baloo Bhaina 2';
@@ -105,32 +100,43 @@ nav ul {
 }
 
 #reset:hover {
-    background: white;
-    color: #9ac8fa;
+    background-color: white;
+    color: #07bfff;
 }
 
- .line{
-    background-color: black;
+.line {
+    background-color: #07bfff;
     height: 3px;
     width: 0;
     position: absolute;
-    background-color: #007bff;
     transition: width 1s ease-in-out;
- }  
+}
 
-@media screen and (max-width: 950px)
-{
-    .gameContainer{
+@media screen and (max-width: 950px) {
+    .gameContainer {
         flex-wrap: wrap;
     }
-    .gameInfo{
+
+    .gameInfo {
         margin-top: 34px;
     }
-    .gameInfo h1{
+
+    .gameInfo h1 {
         font-size: 1.5rem;
     }
-    .container { 
+
+    .container {
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
+    }
+
+    .line {
+        background-color: #07bfff;
+        width: 20px;
+        height: 3px;
+        position: absolute;
+        padding: 0 49px;
+        margin: 0 44px;
+        transition: width 1s ease-in-out;
     }
 }
