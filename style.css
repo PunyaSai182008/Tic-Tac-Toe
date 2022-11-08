@@ -130,13 +130,5 @@ nav ul {
         grid-template-columns: repeat(3, 20vw);
     }
 
-    .line {
-        background-color: #07bfff;
-        width: 20px;
-        height: 3px;
-        position: absolute;
-        padding: 0 49px;
-        margin: 0 44px;
-        transition: width 1s ease-in-out;
-    }
+   
 }
