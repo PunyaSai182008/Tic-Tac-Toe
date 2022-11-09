@@ -6,7 +6,7 @@ let turn = "X"
 let isgameover = false;
 
 const changeTurn = ()=>{
-    return turn === "X"? "0": "X"
+    return turn === "X"? "O": "X"
 }
 
 const checkWin = ()=>{
